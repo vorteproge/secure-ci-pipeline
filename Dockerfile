@@ -1,4 +1,4 @@
-FROM python:3.12-alpine
+FROM python:alpine
 WORKDIR /app
 RUN apk update && apk upgrade --no-cache && \
     pip install --no-cache-dir --upgrade pip setuptools
