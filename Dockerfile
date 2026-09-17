@@ -1,5 +1,2 @@
-FROM python:3.12-alpine
-WORKDIR /app
-COPY app.py .
-USER 1001
-CMD ["python", "app.py"]
+FROM alpine:3.12
+RUN apk add --no-cache curl=7.69.1-r0
