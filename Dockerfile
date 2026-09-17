@@ -1,2 +1,4 @@
-FROM alpine:3.12
-RUN apk add --no-cache curl=7.69.1-r0
+FROM python:3.8-slim
+WORKDIR /app
+COPY app.py .
+CMD ["python", "app.py"]
